@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import './style.css'
-import { rotate } from 'three/tsl';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 
 const w = window.innerWidth;
@@ -27,7 +26,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.03;
 
-const geo = new THREE.IcosahedronGeometry(1.0, 30);
+const geo = new THREE.IcosahedronGeometry(1.0, 2);
 const mat = new THREE.MeshStandardMaterial({
   color:0xffffff,
   flatShading:true,
