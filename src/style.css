@@ -1,4 +1,16 @@
+@import "tailwindcss";
+
 *{
   margin: 0;
   padding: 0;
+}
+
+.logo{
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sec-container{
+  margin: auto;
 }

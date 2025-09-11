@@ -19,7 +19,7 @@ const earthGroup = new THREE.Group();
 earthGroup.rotation.z = -23.4 * Math.PI / 180;
 scene.add(earthGroup);
 new OrbitControls(camera, renderer.domElement);
-const detail = 16;
+const detail = 26;
 const loader = new THREE.TextureLoader();
 const geometry = new THREE.IcosahedronGeometry(1.5, detail);
 const material = new THREE.MeshPhongMaterial({
@@ -70,7 +70,7 @@ function animate() {
   lightsMesh.rotation.y += 0.001;
   cloudsMesh.rotation.y += 0.0015;
   glowMesh.rotation.y += 0.002;
-  stars.rotation.y -= 0.0002;
+  stars.rotation.y -= 0.0005;
   renderer.render(scene, camera);
 }
 
