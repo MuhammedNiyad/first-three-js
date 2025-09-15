@@ -14,3 +14,9 @@
 .sec-container{
   margin: auto;
 }
+
+@theme{
+  .nav-link{
+    @apply 'text-2xl text-white font-bold';
+  }
+}
